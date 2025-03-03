@@ -16,36 +16,36 @@ function copyLink(){
 	alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요💕")
 }
 
-// 재윤 계좌번호 복사
-function jaeyunAccountNumber(){
-	var jaeyun_account = '00000000 카카오뱅크';
+// 신부 계좌번호 복사
+function brideAccountNumber(){
+	var bride_account = '00000000 카카오뱅크';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
-	textarea.value = jaeyun_account;
+	textarea.value = bride_account;
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("이재윤의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+	alert("신부의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
 }
 
-// 영석 계좌번호 복사
-function yeongseokAccountNumber(){
-	var yeongseok_account = '00000000 카카오뱅크';
+// 신랑 계좌번호 복사
+function groomAccountNumber(){
+	var groom_account = '00000000 카카오뱅크';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
-	textarea.value = yeongseok_account;
+	textarea.value = groom_account;
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("최영석의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+	alert("신랑의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
 }
 
 // 아버님 계좌번호 복사 
-function yeongseoksFatherAccountNumber(){
-    var yeongseoks_father_account = '00000000 국민은행';
+function groomsFatherAccountNumber(){
+    var grooms_father_account = '00000000 국민은행';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
-	textarea.value = yeongseoks_father_account;
+	textarea.value = grooms_father_account;
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
@@ -55,7 +55,7 @@ function yeongseoksFatherAccountNumber(){
 
 // 카카오톡 공유하기
 function kakaoShare() {
-    Kakao.init('00000000');
+    Kakao.init('6324846770cc3fff60e3982d062392ac');
     // SDK 초기화 여부를 판단합니다.
     Kakao.isInitialized();
     //console.log(Kakao.isInitialized());
