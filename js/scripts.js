@@ -55,7 +55,7 @@ function groomsFatherAccountNumber(){
 
 // 카카오톡 공유하기
 function kakaoShare() {
-    Kakao.init('6324846770cc3fff60e3982d062392ac');
+    Kakao.init('YOUR APP KEY');
     // SDK 초기화 여부를 판단합니다.
     Kakao.isInitialized();
     //console.log(Kakao.isInitialized());
