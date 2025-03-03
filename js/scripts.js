@@ -59,7 +59,7 @@ function kakaoShare() {
     // SDK 초기화 여부를 판단합니다.
     Kakao.isInitialized();
     //console.log(Kakao.isInitialized());
-    Kakao.Link.sendDefault({
+    Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
         title: '재윤🤍영석 결혼합니다.',
