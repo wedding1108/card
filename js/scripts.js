@@ -104,7 +104,7 @@ function kakaoShare() {
     },
     buttons: [
       {
-        title: '모바일 청첩장 보기',
+        title: '청첩장 보기',
         link: {
           mobileWebUrl: 'https://wedding1108.github.io/card/',
           webUrl:        'https://wedding1108.github.io/card/'
