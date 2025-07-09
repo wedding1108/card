@@ -95,7 +95,7 @@ function kakaoShare() {
     content: {
       title: '진욱🤍보경 결혼합니다.',
       description: '2025.11.08\n정오 12시 메리포엠 웨딩홀',
-      imageUrl: 'https://github.com/wedding1108/card/edit/main/assets/img/main.jpg?raw=true',
+      imageUrl: 'https://github.com/wedding1108/card/edit/main/assets/img/main.jpg',
 	    //https://github.com/wedding1108/card/edit/main/js/scripts.js
       link: { //https://wedding1108.github.io/card/  https://comgongnuna.github.io/#!
         mobileWebUrl: 'https://wedding1108.github.io/card/',
