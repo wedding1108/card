@@ -10,6 +10,8 @@
         <meta name="author" content="" />
         <title>진욱🤍보경</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+        <!-- 카카오 SDK → 반드시 가장 먼저 -->
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Simple line icons-->
@@ -26,6 +28,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+\
         <style>
             /* 터치 동작 중 확대 축소 제스처 막기 */
             html, body {
@@ -47,6 +50,7 @@
 
     </head>
     <body oncontextmenu="return false;">
+
     <body id="page-top" oncontextmenu="return false;">
       <!-- 또는 아래 스크립트를 head 맨 끝이나 body 맨 처음에 -->
       <script>
@@ -65,6 +69,14 @@
                 <p style="font-family: 'Song Myung', serif; color: white; font-size: 17px;"><br>❤ 2025.11.08 ❤<br>정오 12시<br>메리포엠 웨딩홀</p>
             </div>
         </header>
+
+        <!-- 모바일청첩장 공유 버튼 -->
+        <div class="text-center my-5">
+            <button onclick="kakaoShare()"
+                    style="font-family:'Song Myung',serif;font-size:16px;">
+              모바일 청첩장 바로가기
+            </button>
+        </div>
         
 <!--         <section class="content-section bg-light" id="about">
           <div class="container px-4 px-lg-5 text-center">
@@ -294,6 +306,6 @@
         
           document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
         </script>
-        
+
     </body>
 </html>
