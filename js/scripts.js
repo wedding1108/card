@@ -93,7 +93,7 @@ function kakaoShare() {
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
-      title: '진욱🤍보경 결혼합니다.',
+      title: '진욱❤️보경 결혼합니다.',
       description: '2025.11.08\n정오 12시 메리포엠 웨딩홀',
       imageUrl: 'https://wedding1108.github.io/card/assets/img/main.jpg',
 	    //https://raw.githubusercontent.com/wedding1108/card/main/assets/img/main.jpg raw이미지
