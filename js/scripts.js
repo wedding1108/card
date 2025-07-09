@@ -25,7 +25,7 @@ function brideAccountNumber(){
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("신부의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+	alert("신부 위보경의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
 }
 
 // 신랑 계좌번호 복사
@@ -37,7 +37,7 @@ function groomAccountNumber(){
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("신랑의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+	alert("신랑 정진욱의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
 }
 
 // 아버님 계좌번호 복사 
@@ -62,8 +62,8 @@ function kakaoShare() {
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-        title: '재윤🤍영석 결혼합니다.',
-        description: '2024.03.01\n11시 30분 빌라드지디 청담',
+        title: '진욱🤍보경 결혼합니다.',
+        description: '2025.11.08\n 정오 12시 메리포엠 웨딩홀',
         imageUrl: 'https://github.com/jaeyun95/jaeyun95.github.io/blob/main/assets/img/main.jpg?raw=true',
         link: {
             mobileWebUrl: 'https://comgongnuna.github.io/#!',
