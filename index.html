@@ -25,7 +25,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
+        <style>
+          .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+          }
+          .reveal.active {
+            opacity: 1;
+            transform: none;
+          }
+        </style>
 
     </head>
     <body id="page-top">
@@ -47,12 +57,15 @@
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
-                        <p class="reveal style="font-family: 'Song Myung', serif; font-size: 16px;">
+                        <p class="reveal" style="font-family: 'Song Myung', serif; font-size: 16px;">
                             깊어가는 가을 11월의 찬란한 날에
+                            <br>
                             <br>
                             서로의 반려자가 되어 인생의 새로운 막을 맞이하려 합니다.
                             <br>
+                            <br>
                             함께 웃고 울며 쌓아온 시간에
+                            <br>
                             <br>
                             여러분의 따뜻한 축복을 더해 주시면 감사하겠습니다.
                         </p>
@@ -226,6 +239,20 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.js">
+            document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries, obs) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('active');
+                  obs.unobserve(entry.target);
+                }
+              });
+            }, { threshold: 0.1 });
+            reveals.forEach(el => observer.observe(el));
+          });
+        </script>
+        
     </body>
 </html>
