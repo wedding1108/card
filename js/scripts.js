@@ -6,7 +6,7 @@
 
 // 링크 복사
 function copyLink(){
-	var url = 'https://comgongnuna.github.io/';
+	var url = 'https://wedding1108.github.io/card/';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
 	textarea.value = url;
