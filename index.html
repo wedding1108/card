@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--         <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta property="og:image" content="assets/img/url-main.jpg">
         <meta property="og:description" content="2025.11.08 진욱🤍보경 결혼합니다."/>
         <meta charset="utf-8" />
@@ -26,6 +27,13 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
+            /* 터치 동작 중 확대 축소 제스처 막기 */
+            html, body {
+              touch-action: pan-x pan-y; /* 핀치 줌, 더블 탭 줌 방지 */
+            }
+          </style>
+        
+        <style>
           .reveal {
             opacity: 0;
             transform: translateY(20px);
@@ -38,6 +46,12 @@
         </style>
 
     </head>
+    <body oncontextmenu="return false;">
+    <body id="page-top" oncontextmenu="return false;">
+      <!-- 또는 아래 스크립트를 head 맨 끝이나 body 맨 처음에 -->
+      <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+      </script>
     <body id="page-top">
 
         <!-- Header-->
@@ -256,7 +270,12 @@
         <!-- Core theme JS-->
         <!-- 외부 스크립트 로드 -->
         <script src="js/scripts.js"></script>
-        
+        <script>
+            // iOS Safari 등에서 gesture 이벤트 차단
+            ['gesturestart', 'gesturechange', 'gestureend'].forEach(evt =>
+              document.addEventListener(evt, e => e.preventDefault())
+            );
+        </script>
         <!-- inline Observer 코드 -->
         <script>
           const observer = new IntersectionObserver((entries) => {
