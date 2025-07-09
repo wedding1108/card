@@ -53,35 +53,66 @@ function groomsFatherAccountNumber(){
 }
 
 
+// // 카카오톡 공유하기
+// function kakaoShare() {
+//     Kakao.init('e7692cabcc174cf3fa8bc222974520ec');
+//     // SDK 초기화 여부를 판단합니다.
+//     Kakao.isInitialized();
+//     console.log(Kakao.isInitialized());
+//     Kakao.Share.sendDefault({
+//         objectType: 'feed',
+//         content: {
+//         title: '진욱🤍보경 결혼합니다.',
+//         description: '2025.11.08\n 정오 12시 메리포엠 웨딩홀',
+//         imageUrl: 'https://github.com/jaeyun95/jaeyun95.github.io/blob/main/assets/img/main.jpg?raw=true',
+//         link: {
+//             mobileWebUrl: 'https://comgongnuna.github.io/#!',
+//             webUrl: 'https://comgongnuna.github.io/#!',
+//         },
+//         },
+//         buttons: [
+//         {
+//             title: '모바일 청첩장 보기',
+//             link: {
+//             mobileWebUrl: 'https://comgongnuna.github.io/#!',
+//             webUrl: 'https://comgongnuna.github.io/#!',
+//             },
+//         },
+//         ],
+//         // 카카오톡 미설치 시 카카오톡 설치 경로이동
+//         installTalk: true,
+//     })
+// }
+
+// → SDK가 로드된 직후(한 번만) 초기화
+Kakao.init('e7692cabcc174cf3fa8bc222974520ec');
+console.log('Kakao initialized:', Kakao.isInitialized());
+
 // 카카오톡 공유하기
 function kakaoShare() {
-    Kakao.init('e7692cabcc174cf3fa8bc222974520ec');
-    // SDK 초기화 여부를 판단합니다.
-    Kakao.isInitialized();
-    //console.log(Kakao.isInitialized());
-    Kakao.Share.sendDefault({
-        objectType: 'feed',
-        content: {
-        title: '진욱🤍보경 결혼합니다.',
-        description: '2025.11.08\n 정오 12시 메리포엠 웨딩홀',
-        imageUrl: 'https://github.com/jaeyun95/jaeyun95.github.io/blob/main/assets/img/main.jpg?raw=true',
+  Kakao.Share.sendDefault({
+    objectType: 'feed',
+    content: {
+      title: '진욱🤍보경 결혼합니다.',
+      description: '2025.11.08\n정오 12시 메리포엠 웨딩홀',
+      imageUrl: 'https://github.com/wedding1108/card/edit/main/assets/img/main.jpg?raw=true',
+	    //https://github.com/wedding1108/card/edit/main/js/scripts.js
+      link: { //https://wedding1108.github.io/card/  https://comgongnuna.github.io/#!
+        mobileWebUrl: 'https://wedding1108.github.io/card/',
+        webUrl:        'https://wedding1108.github.io/card/'
+      }
+    },
+    buttons: [
+      {
+        title: '모바일 청첩장 보기',
         link: {
-            mobileWebUrl: 'https://comgongnuna.github.io/#!',
-            webUrl: 'https://comgongnuna.github.io/#!',
-        },
-        },
-        buttons: [
-        {
-            title: '모바일 청첩장 보기',
-            link: {
-            mobileWebUrl: 'https://comgongnuna.github.io/#!',
-            webUrl: 'https://comgongnuna.github.io/#!',
-            },
-        },
-        ],
-        // 카카오톡 미설치 시 카카오톡 설치 경로이동
-        installTalk: true,
-    })
+          mobileWebUrl: 'https://wedding1108.github.io/card/',
+          webUrl:        'https://wedding1108.github.io/card/'
+        }
+      }
+    ],
+    installTalk: true
+  });
 }
 
 function toggleFoldable() {
