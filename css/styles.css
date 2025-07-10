@@ -11143,7 +11143,7 @@ footer.footer {
   transform: translateX(-50%);
   text-align: center;
   font-family: 'Britney', serif;
-  color: #343a40;
+  color: #A38550;
   font-weight: normal; /* Regular Bold Light*/
   line-height: 1.2;        /* 줄간격 */
   font-size: 4rem;       /* 필요에 따라 조절 */
@@ -11161,7 +11161,7 @@ footer.footer {
   margin: 0;
   padding: 0;
   font-family: 'Stardom', serif;
-  color: #343a40;
+  color: #A38550;
   font-size: 1rem;
   z-index: 1;
   white-space: pre-line;
