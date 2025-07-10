@@ -11129,17 +11129,25 @@ footer.footer {
 /* 날짜·부제 */
 .masthead .subheading {
   position: absolute;
-  top: 85%;              /* headline 아래쪽에 배치 */
+  top: 85%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   font-family: 'Stardom', serif;
   color: white;
-  font-size: 1.2rem;     /* 필요에 따라 조절 */
+  font-size: 1.2rem;
   line-height: 1.3;
   margin: 0;
   z-index: 1;
-  white-space: pre-line;
+
+  /* ↓ 여기서 자동 줄바꿈 막기 ↓ */
+  white-space: pre;
+}
+
+/* 컨테이너 패딩 제거 */
+.masthead > .container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /* 반응형: 모바일 대응 */
@@ -11149,7 +11157,7 @@ footer.footer {
   }
   .masthead .subheading {
     font-size: 1rem;
-    top: 65%;            /* 위치도 살짝 아래로 조정 */
+    top: 85%;            /* 위치도 살짝 아래로 조정 */
   }
 }
 /* ────────────────────────────────────────────────────────── */
