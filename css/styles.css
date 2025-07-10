@@ -11131,18 +11131,25 @@ footer.footer {
 .masthead .subheading {
   position: absolute;
   top: 75%;
-  left: 40%;
+  left: 50%;
   transform: translateX(-50%);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   font-family: 'Stardom', serif;
   color: white;
-  font-size: 1.2rem; 
-  line-height: 0.5; /* 줄간격 */
-  margin: 0;
+  font-size: 1.2rem;
+  /* 브라우저 기본 줄간격 대신 gap 으로 제어 */
+  gap: 0.2rem;       /* 줄 사이 간격을 0.2rem 로 고정 */
   z-index: 1;
-
-  /* ↓ 여기서 자동 줄바꿈 막기 ↓ */
-  white-space: pre;
+}
+.masthead .subheading span {
+  /* span 기본 여백 제거 */
+  margin: 0;
+  padding: 0;
+  line-height: 1;    /* span 내부 텍스트 줄간격(단일 줄이라 의미 없음) */
 }
 
 /* 컨테이너 패딩 제거 */
