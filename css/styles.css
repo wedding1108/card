@@ -10829,7 +10829,7 @@ textarea.form-control-lg {
   }
 }
 html, body {
-  width: 375px;
+  width: 100%;
   max-width: 480px;
   margin: 0 auto;
   overflow-x: hidden;
