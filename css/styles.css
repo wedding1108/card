@@ -11191,7 +11191,9 @@ a.no-style {
   color: #495057;         /* 기본 텍스트 컬러 */
 }
 #wedding-calendar .calendar-month {
-  font-size: 2rem;
+  /* 최소 24px, 뷰포트 너비의 5% 또는 최대 48px 중 사이값을 자동으로 선택 */
+  font-size: clamp(20px, 5vw, 40px);
+  font-weight: 400;
   margin-bottom: 1rem;
   color: var(--bs-darkbeige); /* 월 이름은 베이지 */
 }
