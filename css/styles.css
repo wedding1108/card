@@ -11177,18 +11177,6 @@ footer.footer {
   line-height: 1;    /* span 내부 텍스트 줄간격(단일 줄이라 의미 없음) */
 }
 
-/* 모바일(최대 768px 너비) 에서는 좀 더 위로 당겨주기 */
-@media (max-width: 768px) {
-  .masthead .headline {
-    top: 90px;         /* 모바일에서 90px 위로 */
-    font-size: 2.5rem; /* 이미 적용하신 대로 */
-  }
-  .masthead .subheading {
-    top: 160px;        /* 모바일에서 160px 위로 */
-    font-size: 1rem;
-  }
-}
-
 /* 컨테이너 패딩 제거 */
 .masthead > .container {
   padding-left: 0 !important;
