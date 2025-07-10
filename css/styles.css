@@ -11138,19 +11138,25 @@ footer.footer {
 /* “Our wedding day” */
 .masthead .headline {
   position: absolute;
-  top: 200px;              /* 화면 높이의 120px 아래 */
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;       /* 줄 사이 간격을 0.2rem로 고정 */
   font-family: 'Britney', serif;
   color: #A38550;
-  font-weight: normal; /* Regular Bold Light*/
-  line-height: 1.2;        /* 줄간격 */
-  font-size: 4rem;       /* 필요에 따라 조절 */
+  font-size: 4rem;
+  font-weight: normal;
   margin: 0;
+  padding: 0;
   z-index: 2;
-  white-space: pre-line;
 }
+.masthead .headline span {
+  display: block;    /* 각 단어를 블록으로 분리 */
+}
+
 
 /* 날짜·부제 */
 .masthead .subheading {
@@ -11271,7 +11277,7 @@ a.no-style {
    2025년 11월 웨딩 달력 스타일
 ─────────────────────────────────────── */
 #wedding-calendar {
-  font-family: 'Song Myung', serif;
+  font-family: 'Nanum Myeongjo', serif;
   color: #495057;         /* 기본 텍스트 컬러 */
 }
 #wedding-calendar .calendar-month {
