@@ -11112,11 +11112,11 @@ footer.footer {
 /* “Our wedding day” */
 .masthead .headline {
   position: absolute;
-  top: 38%;              /* 화면 높이의 38% 지점 */
+  top: 65%;              /* 화면 높이의 38% 지점 */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-family: 'Stardom', serif;
+  font-family: 'Britney', serif;
   color: white;
   font-weight: bold;
   line-height: 1;        /* 줄간격 */
@@ -11129,7 +11129,7 @@ footer.footer {
 /* 날짜·부제 */
 .masthead .subheading {
   position: absolute;
-  top: 60%;              /* headline 아래쪽에 배치 */
+  top: 85%;              /* headline 아래쪽에 배치 */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
