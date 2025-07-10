@@ -11138,7 +11138,7 @@ footer.footer {
 /* “Our wedding day” */
 .masthead .headline {
   position: absolute;
-  top: 160px;              /* 화면 높이의 120px 아래 */
+  top: 200px;              /* 화면 높이의 120px 아래 */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
