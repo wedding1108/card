@@ -11179,3 +11179,68 @@ a.no-style {
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
+
+
+/* ───────────────────────────────────────
+   2025년 11월 웨딩 달력 스타일
+─────────────────────────────────────── */
+#wedding-calendar {
+  font-family: 'Song Myung', serif;
+  color: #495057;         /* 기본 텍스트 컬러 */
+}
+#wedding-calendar .calendar-month {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--bs-beige); /* 월 이름은 베이지 */
+}
+
+/* 달력 그리기 */
+.calendar {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.calendar th,
+.calendar td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5rem 0;
+}
+
+/* 요일 헤더 */
+.calendar th {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c757d;
+}
+.calendar th:first-child {
+  color: var(--bs-beige);  /* ‘일’요일만 강조 */
+}
+
+/* 날짜 숫자 */
+.calendar td span {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+}
+
+/* 결혼 날짜 강조 */
+.calendar .wedding-day span {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--bs-beige);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* 작은 화면일 때 테이블이 깨지지 않도록 스크롤 허용 */
+#wedding-calendar .container {
+  overflow-x: auto;
+}
