@@ -11103,31 +11103,56 @@ footer.footer {
             clip-path: inset(2rem);
   }
 }
-
+/* ────────────────────────────────────────────────────────── */
+/* 헤더를 기준으로 headline/subheading 절대위치 잡기 */
 .masthead {
   position: relative;
 }
 
+/* “Our wedding day” */
 .masthead .headline {
   position: absolute;
-  top: 50%;
+  top: 38%;              /* 화면 높이의 38% 지점 */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   text-align: center;
-  font-family: 'Britney', serif;
+  font-family: 'Stardom', serif;
   color: white;
   font-weight: bold;
-  line-height: 1;
-  font-size: 4rem;
+  line-height: 1;        /* 줄간격 */
+  font-size: 4rem;       /* 필요에 따라 조절 */
   margin: 0;
+  z-index: 2;
   white-space: pre-line;
 }
 
+/* 날짜·부제 */
+.masthead .subheading {
+  position: absolute;
+  top: 60%;              /* headline 아래쪽에 배치 */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Stardom', serif;
+  color: white;
+  font-size: 1.2rem;     /* 필요에 따라 조절 */
+  line-height: 1.3;
+  margin: 0;
+  z-index: 1;
+  white-space: pre-line;
+}
+
+/* 반응형: 모바일 대응 */
 @media (max-width: 768px) {
   .masthead .headline {
     font-size: 2.5rem;
   }
+  .masthead .subheading {
+    font-size: 1rem;
+    top: 65%;            /* 위치도 살짝 아래로 조정 */
+  }
 }
+/* ────────────────────────────────────────────────────────── */
 
 
 .service-icon {
