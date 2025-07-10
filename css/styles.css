@@ -11138,7 +11138,7 @@ footer.footer {
 /* “Our wedding day” */
 .masthead .headline {
   position: absolute;
-  top: 50%;              /* 화면 높이의 38% 지점 */
+  top: 120px;              /* 화면 높이의 120px 아래 */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -11155,7 +11155,7 @@ footer.footer {
 /* 날짜·부제 */
 .masthead .subheading {
   position: absolute;
-  bottom: 5%;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -11175,6 +11175,18 @@ footer.footer {
   margin: 0;
   padding: 0;
   line-height: 1;    /* span 내부 텍스트 줄간격(단일 줄이라 의미 없음) */
+}
+
+/* 모바일(최대 768px 너비) 에서는 좀 더 위로 당겨주기 */
+@media (max-width: 768px) {
+  .masthead .headline {
+    top: 90px;         /* 모바일에서 90px 위로 */
+    font-size: 2.5rem; /* 이미 적용하신 대로 */
+  }
+  .masthead .subheading {
+    top: 160px;        /* 모바일에서 160px 위로 */
+    font-size: 1rem;
+  }
 }
 
 /* 컨테이너 패딩 제거 */
