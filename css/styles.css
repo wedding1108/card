@@ -13,6 +13,8 @@
 :root {
   --bs-blue: #1D809F;
   --bs-beige: #dbaf79;
+  --bs-darkbeige: #A38550;
+  
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -11216,7 +11218,7 @@ a.no-style {
   color: #6c757d;
 }
 .calendar th:first-child {
-  color: var(--bs-beige);  /* ‘일’요일만 강조 */
+  color: var(--bs-darkbeige);  /* ‘일’요일만 강조 */
 }
 
 /* 날짜 숫자 */
@@ -11235,7 +11237,7 @@ a.no-style {
   height: 2.5rem;
   line-height: 2.5rem;
   border-radius: 50%;
-  background-color: var(--bs-beige);
+  background-color: var(--bs-darkbeige);
   color: #fff;
   font-weight: 500;
 }
