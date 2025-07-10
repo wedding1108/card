@@ -11013,7 +11013,7 @@ footer.footer {
     height: 75%;
   }
 }
-.masthead {
+/* .masthead {
   min-height: 30rem;
   position: relative;
   display: table;
@@ -11025,7 +11025,32 @@ footer.footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+.masthead {
+  position: relative;
+  width: 100%;
+  /* 기존 display/table, height:auto 는 제거해도 됩니다 */
+  display: block;
+  
+  /* 헤더 높이를 화면 높이의 60%로 고정 */
+  min-height: 60vh;      
+  
+  /* gradient+background 그대로 유지 */
+  background: linear-gradient(
+      90deg, 
+      rgba(255,255,255,0.1) 0%, 
+      rgba(255,255,255,0.1) 100%
+    ),
+    url("../assets/img/main.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* 텍스트 위치만 살짝 아래로 내려주려면 padding 대신 top 값 조절 */
+  padding: 0;  /* 기존 padding 제거 */
 }
+
 .masthead h1, .masthead .h1 {
   font-size: 4rem;
   margin: 0;
@@ -11113,7 +11138,7 @@ footer.footer {
 /* “Our wedding day” */
 .masthead .headline {
   position: absolute;
-  top: 55%;              /* 화면 높이의 38% 지점 */
+  top: 50%;              /* 화면 높이의 38% 지점 */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -11130,7 +11155,7 @@ footer.footer {
 /* 날짜·부제 */
 .masthead .subheading {
   position: absolute;
-  top: 75%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
