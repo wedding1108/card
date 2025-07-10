@@ -11034,7 +11034,7 @@ footer.footer {
   display: block;
   
   /* 헤더 높이를 화면 높이의 60%로 고정 */
-  min-height: 60vh;      
+  min-height: 80vh;      
   
   /* gradient+background 그대로 유지 */
   background: linear-gradient(
