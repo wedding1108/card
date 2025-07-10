@@ -11165,7 +11165,7 @@ footer.footer {
   padding: 0;
   font-family: 'Stardom', serif;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   /* 브라우저 기본 줄간격 대신 gap 으로 제어 */
   gap: 0.2rem;       /* 줄 사이 간격을 0.2rem 로 고정 */
   z-index: 1;
