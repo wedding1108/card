@@ -11193,7 +11193,7 @@ a.no-style {
 #wedding-calendar .calendar-month {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--bs-beige); /* 월 이름은 베이지 */
+  color: var(--bs-darkbeige); /* 월 이름은 베이지 */
 }
 
 /* 달력 그리기 */
