@@ -12,7 +12,7 @@
  */
 :root {
   --bs-blue: #1D809F;
-  --bs-beige: #dbaf79;
+  --bs-beige: #fad389; 
   --bs-darkbeige: #A38550;
   
   --bs-indigo: #6610f2;
@@ -11146,7 +11146,7 @@ footer.footer {
   align-items: center;
   gap: 0.2rem;       /* 줄 사이 간격을 0.2rem로 고정 */
   font-family: 'Britney', serif;
-  color: #A38550;
+  color: #fad389;
   font-size: 4rem;
   font-weight: normal;
   margin: 0;
@@ -11167,7 +11167,7 @@ footer.footer {
   margin: 0;
   padding: 0;
   font-family: 'Stardom', serif;
-  color: #A38550;
+  color: #fad389;
   font-size: 1rem;
   z-index: 1;
   white-space: pre-line;
