@@ -11137,7 +11137,7 @@ footer.footer {
 
 /* “Our wedding day” */
 .masthead .headline {
-  position: absolute;
+  position: fixed;
   top: 200px;
   left: 50%;
   transform: translateX(-50%);
@@ -11160,7 +11160,7 @@ footer.footer {
 
 /* 날짜·부제 */
 .masthead .subheading {
-  position: absolute;
+  position: fixed; /*absolute*/
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -11182,15 +11182,14 @@ footer.footer {
 }
 
 /* 반응형: 모바일 대응 */
-/* @media (max-width: 768px) {
-  .masthead .headline {
-    font-size: 2.5rem;
+@media (max-width: 768px) {
+  .masthead {
+    /* 기존 min-height/padding 제거 */
+    min-height: auto !important;
+    height: auto !important;
+    padding: 0 !important;
   }
-  .masthead .subheading {
-    font-size: 1rem;
-    top: 75%;            /* 위치도 살짝 아래로 조정 */
-  }
-} */
+}
 /* ────────────────────────────────────────────────────────── */
 
 
