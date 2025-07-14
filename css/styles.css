@@ -11180,26 +11180,15 @@ footer.footer {
   padding-right: 0 !important;
 } */
 
-/* 반응형: 모바일 대응 */
-/* @media (max-width: 768px) {
-  .masthead {
-    /* 기존 min-height/padding 제거 */
-    min-height: auto !important;
-    height: auto !important;
-    padding: 0 !important;
-  }
-} */
+
 /* ────────────────────────────────────────────────────────── */
 /* ────────────────────────────────────────────────────────── */
 /* 헤더 영역 (배경 이미지 + 그라디언트) */
+
 .masthead {
   position: relative;
   width: 100%;
   min-height: 80vh;               /* 필요에 따라 vh 값 조정 */
-/*   background:
-    linear-gradient(90deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-    url("../assets/img/main.jpg"); 
-  center/cover no-repeat; */
   background: linear-gradient(
       90deg, 
       rgba(255,255,255,0.1) 0%, 
