@@ -212,6 +212,40 @@
             </table>
           </div>
         </section>
+
+        <!-- Countdown Zone: 결혼식까지 남은 날짜 -->
+        <section id="countdown" class="content-section text-center py-4">
+          <div class="container px-4 px-lg-5">
+            <p style="font-family: 'Song Myung', serif; font-size: 1.25rem; color: #A38550;">
+              결혼식까지 <span id="days-remaining">0</span>일 남았습니다.
+            </p>
+          </div>
+        </section>
+
+        <!-- Countdown 스크립트 -->
+        <script>
+          (function(){
+            // 결혼식 날짜: 2025년 11월 8일 (월은 0=1월 기준)
+            const weddingDate = new Date(2025, 10, 8);
+            const el = document.getElementById('days-remaining');
+
+            function updateCountdown() {
+              const now = new Date();
+              // 남은 밀리초 계산
+              const diff = weddingDate - now;
+              // 하루(24h)를 밀리초로 나눠서 올림
+              const days = diff > 0
+                ? Math.ceil(diff / (1000 * 60 * 60 * 24))
+                : 0;
+              el.textContent = days;
+            }
+
+            // 페이지 로드 직후와, 매 시간 갱신
+            updateCountdown();
+            setInterval(updateCountdown, 60 * 60 * 1000);
+          })();
+        </script>
+        
         <!-- Photo Zone -->
         <section class="content-section" id="portfolio">
             <div class="container px-4 px-lg-5">
