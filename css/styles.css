@@ -11037,7 +11037,7 @@ footer.footer {
   min-height: 80vh;      
   
   /* gradient+background 그대로 유지 */
-  background: linear-gradient(
+/*   background: linear-gradient(
       90deg, 
       rgba(255,255,255,0.1) 0%, 
       rgba(255,255,255,0.1) 100%
@@ -11046,7 +11046,7 @@ footer.footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
+ */
   /* 텍스트 위치만 살짝 아래로 내려주려면 padding 대신 top 값 조절 */
   padding: 0;  /* 기존 padding 제거 */
 } */
@@ -11197,6 +11197,7 @@ footer.footer {
     url("../assets/img/main.jpg");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain;
   overflow: hidden;
 }
 
